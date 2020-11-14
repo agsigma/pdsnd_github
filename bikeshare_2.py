@@ -83,15 +83,19 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
+
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     print('Select city: ')
     city = input_options(CITY_DATA.keys())
+
     # get user input for month (all, january, february, ... , june)
     print('Select month (type all to include all month in analisys): ')
     month = input_options(MONTH_ENUM.keys())
+
     # get user input for day of week (all, monday, tuesday, ... sunday)
     print('Select day of week (type all to include all month in analisys): ')
     day = input_options(DAY_ENUM.keys())
+    
     print('-'*40)
     return city, month, day
 
