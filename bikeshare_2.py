@@ -59,7 +59,7 @@ NUM_TO_DAY = {
 
 def input_options(options):
     """
-    Ask users for input from predifined list of strings
+    Ask users for input from list of strings passed as parameter
 
     Args:
         (list<string>) options - list of options to select from
