@@ -2,9 +2,11 @@ import time
 import pandas as pd
 import numpy as np
 
-CITY_DATA = { 'chicago': 'chicago.csv',
-              'new york city': 'new_york_city.csv',
-              'washington': 'washington.csv' }
+CITY_DATA = { 
+    'chicago': 'chicago.csv',
+    'new york city': 'new_york_city.csv',
+    'washington': 'washington.csv' 
+}
 
 MONTH_ENUM = {
     'january': 1,
@@ -114,7 +116,7 @@ def load_data(city, month, day):
 
     df = pd.read_csv(CITY_DATA[city])
     datetime_series = pd.to_datetime(df['Start Time'])
-    
+
     df['Timestamp'] = datetime_series
     df['Month'] = df['Timestamp'].dt.month
     df['Day of week'] = df['Timestamp'].dt.dayofweek
