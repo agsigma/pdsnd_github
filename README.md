@@ -1,15 +1,14 @@
 ### Date created
-Include the date you created this project and README file.
+14/11/2020
 
-### Project Title
-Replace the Project Title
+### Bikeshare
 
 ### Description
-Describe what your project is about and what it does
+Interactive exploration of bikeshare data
 
 ### Files used
-Include the files used
+bikeshaer.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Repository was forked from https://github.com/udacity/pdsnd_github
 

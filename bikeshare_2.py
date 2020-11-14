@@ -61,7 +61,7 @@ NUM_TO_DAY = {
 
 def input_options(options):
     """
-    Ask users for input from predifined list of strings
+    Ask users for input from list of strings passed as parameter
 
     Args:
         (list<string>) options - list of options to select from
@@ -111,7 +111,7 @@ def load_data(city, month, day):
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     Returns:
-        df - Pandas DataFrame containing city data filtered by month and day
+        df - Pandas DataFrame containing city data filtered by month and day and additional Timestamp, Month, Day of week and Hour columns
     """
 
     df = pd.read_csv(CITY_DATA[city])
